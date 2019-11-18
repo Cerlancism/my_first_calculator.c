@@ -10,7 +10,7 @@ GCC
 
 ### Generator
 GCC 
-> gcc generator.c.c -o generator
+> gcc generator.c -o generator
 
 ## TODO
 - CLI Arguments for out file name, min and max values
