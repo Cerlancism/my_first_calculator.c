@@ -52,7 +52,7 @@ int main()
     fprintf(outputFile, "%*s%s\n", 4, "", "int num1 = 0, num2 = 0;");
     fprintf(outputFile, "%*s%s\n", 4, "", "char sign = '+';");
     fprintf(outputFile, "%*s%s\n", 4, "", "printf(\"Welcome to this calculator!\\n\");");
-    fprintf(outputFile, "%*s%s\n", 4, "", "printf(\"It can add, subtract, multiply and divide whole numbers from 0 to 50\\n\");");
+    fprintf(outputFile, "%*sprintf(\"It can add, subtract, multiply and divide whole numbers from %d to %d\\n\");\n", 4, "", NUM_MIN, NUM_MAX);
     fprintf(outputFile, "%*s%s\n", 4, "", "printf(\"Please choose your first number: \");");
     fprintf(outputFile, "%*s%s\n", 4, "", "scanf(\"%d\", &num1);");
     fprintf(outputFile, "%*s%s\n", 4, "", "printf(\"What do you want to do? +, -, /, or *: \");");
