@@ -33,7 +33,7 @@ void printOperatorStatements(FILE *file, char sign, double min, double max, doub
         for (b = min; b <= max; b += 1)
         {
             double c = func(a, b);
-            fprintf(file, "%*sif (sign == '%c' && num1 == %d && num2 == %d)\n", 4, "", sign, (int)a, (int)b);
+            fprintf(file, "%*sif (num1 == %d && sign == '%c' && num2 == %d)\n", 4, "", (int)a, sign, (int)b);
             fprintf(file, "%*sprintf(\"%d %c %d = %g\\n\");\n", 8, "", (int)a, sign, (int)b, c);
         }
     }
